@@ -1,0 +1,15 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: roxmotor.com
+  https: false
+domains:
+- domain: roxmotor.com
+  dnssec: true
+  caa:
+  - 6a1c46976feeb78656562f1cf0923fb4.qcloudwzgj.com.
+  - 4bf15620b49cf7f1-cl2.qcloudcjgj.com.
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

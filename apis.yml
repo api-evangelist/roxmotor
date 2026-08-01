@@ -1,7 +1,22 @@
 aid: roxmotor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/roxmotor.png
 name: roxmotor
-description: roxmotor is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ROX Motor (roxmotor.com) is a Chinese electric-vehicle manufacturer, a portfolio
+  company of Qiming Venture Partners, best known for the ROX 01 electric off-road SUV. It is a
+  consumer automotive brand with no public developer API surface; this profile was added to the
+  API Evangelist network as a portfolio lead and enriched with a domain-security probe. The site is
+  hosted on Tencent Cloud and was not reachable from the enrichment environment for content search.
 url: https://raw.githubusercontent.com/api-evangelist/roxmotor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +26,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Automotive
+- Electric Vehicles
+- Mobility
+- China
+- Startup
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +41,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/roxmotor-domain-security.yml
 - type: Website
   url: https://roxmotor.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
